@@ -381,7 +381,7 @@ void typeU(std::string binaryNumber, std::string* imm, std::string* rd){
 
 void typeB(std::string binaryNumber, std::string* imm, std::string* rs2, std::string* rs1, std::string* funct3){
     *imm = binaryNumber[0];
-    *imm = *imm + binaryNumber[11];
+    *imm = *imm + binaryNumber[24];
     *imm = *imm + binaryNumber.substr(1,6);
     *imm = *imm + binaryNumber.substr(20,4);
     *imm = *imm + "0";
